@@ -1,27 +1,25 @@
 // @flow strict
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDisqusComments from 'react-disqus-comments';
 import { useSiteMetadata } from '../../../hooks';
 
-type Props = {
-  postTitle: string,
-  postSlug: string
-};
-
-const Comments = ({ postTitle, postSlug }: Props) => {
-  const { url, disqusShortname } = useSiteMetadata();
-
-  if (!disqusShortname) {
-    return null;
-  }
-
+const Comments = ({ postSlug, postTitle }) => {
+  useEffect(() => {
+    let script = document.createElement("script");
+    let anchor = document.getElementById("inject-comments-for-uterances");
+    script.setAttribute("src", "https://utteranc.es/client.js");
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async", true);
+    script.setAttribute("repo", "AlanMasciangelo/website");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute( "theme", "github-light");
+    script.setAttribute( "label", "comment");
+    anchor.appendChild(script);
+  }, []);
   return (
-    <ReactDisqusComments
-      shortname={disqusShortname}
-      identifier={postTitle}
-      title={postTitle}
-      url={url + postSlug}
-    />
+      // <div id="inject-comments-for-uterances"><a href={`https://github.com/AlanMasciangelo/website/issues/new?title=${postSlug}`}>Leave a comment directly on GitHub</a></div>
+      <div id="inject-comments-for-uterances"></div>
+      
   );
 };
 

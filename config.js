@@ -1,14 +1,13 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://AlanMasciangelo.github.io',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'My personal site',
+  subtitle: '',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
   menu: [
     {
@@ -19,32 +18,32 @@ module.exports = {
       label: 'About me',
       path: '/pages/about'
     },
-    {
+    /**{
       label: 'Contact me',
       path: '/pages/contacts'
-    }
+    }**/
   ],
   author: {
-    name: 'John Doe',
+    name: 'Alan Masciangelo',
     photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    bio: 'Alan is a full stack software engineer, father, and aspiring Graybeard.',
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
+      email: 'a.masciangelo.dev@gmail.com',
+      facebook: '',
+      telegram: '',
+      twitter: '',
+      github: 'AlanMasciangelo',
       rss: '',
       vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
+      linkedin: 'alanmasciangelo',
+      instagram: '',
       line: '',
       gitlab: '',
       weibo: '',
       codepen: '',
       youtube: '',
       soundcloud: '',
-      medium: '',
+      medium: '@a.masciangelo.dev',
     }
   }
 };
