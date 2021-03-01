@@ -1,7 +1,18 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+script:
+  - npm install -g yarn
+  - npm install -g gatsby
+  - yarn install
+  - yarn deploy
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
-  keep_history: true
+  local_dir: build
   on:
     branch: main

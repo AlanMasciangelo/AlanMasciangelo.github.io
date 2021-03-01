@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "name": "My website",
+  "name": "my-website",
   "main": "n/a",
   "scripts": {
     "develop": "yarn clean && gatsby develop",
