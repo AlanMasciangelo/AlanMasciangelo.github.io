@@ -1,13 +1,14 @@
 'use strict';
 
 module.exports = {
-  url: 'https://AlanMasciangelo.github.io',
+  url: 'https://lumen.netlify.com',
   pathPrefix: '/',
   title: 'My personal site',
   subtitle: '',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
+  googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
   menu: [
     {
