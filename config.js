@@ -8,7 +8,6 @@ module.exports = {
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
   menu: [
     {
@@ -27,7 +26,7 @@ module.exports = {
   author: {
     name: 'Alan Masciangelo',
     photo: '/photo.jpg',
-    bio: 'Alan is a full stack software engineer, father, and aspiring Graybeard.',
+    bio: 'I like games 👾, building things 👨‍💻, and whiskey 🥃. ',
     contacts: {
       email: 'a.masciangelo.dev@gmail.com',
       facebook: '',

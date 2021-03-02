@@ -4,4 +4,4 @@ template: "page"
 socialImage: "/media/image-2.jpg"
 ---
 
-A full stack developer with experience building distributed cloud applications, DevSecOps automation, and developer tooling in the defense contracting industry. Currently focused on scaling software organizations from the inside-out through DevSecOps best practices and principles. Aspiring Graybeard and perpetual learner. 
+I'm full stack developer with experience building distributed cloud applications, DevSecOps automation, and developer tooling in the defense contracting industry. Currently focused on scaling software organizations from the inside-out through DevSecOps best practices and principles. 

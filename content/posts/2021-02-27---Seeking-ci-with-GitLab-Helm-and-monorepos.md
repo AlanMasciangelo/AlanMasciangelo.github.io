@@ -22,8 +22,6 @@ socialImage: "https://cdn-images-1.medium.com/max/1000/1*RVEIaW2aJy900CLBKWRW5g.
 
 There comes a time when every team must dive deep into the automation ocean. For us it was somewhere around the ~30 engineer mark. Here’s how we “matured” our continuous integration approach while scaling to 100+ engineers working on ~40 microservices.
 
-### Background
-
 We use a combination of GitLab CI, Docker, Kubernetes, and Helm. We practice [trunk based development](https://trunkbaseddevelopment.com/) in a monorepo hosted in GitLab. The choice to use a monorepo wasn’t made lightly. Ultimately, we decided the benefits were just too great to pass on, even for a small group. Statically typed interfaces, atomic commits, uniform large-scale refactors, lockstep dependency upgrades, and shared build tooling have all paid dividends. Similar to the microservice philosophy, a monorepo does come at a complexity and engineering cost.
 
 ![](https://cdn-images-1.medium.com/max/1000/0*CrM8_hRPlr_Ew_ka)

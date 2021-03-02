@@ -3,8 +3,6 @@
     Lumen
 </h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9dda189f-a09e-4b58-85fe-2bfddf6b62e5/deploy-status)](https://keen-kare-439fdc.netlify.app)
-
 My personal site. Built using [gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen).
 
 ## License
