@@ -111,6 +111,12 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-figure-caption`,
+            options: {
+              figureClassName: 'figure',
+              captionClassName: 'figcaption'},
+          },
           'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-katex',
@@ -122,7 +128,9 @@ module.exports = {
             resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 960,
-              withWebp: true
+              withWebp: true,
+              showCaptions: true,
+              markdownCaptions: true
             }
           },
           {

@@ -15,7 +15,7 @@ description: "There comes a time when every team must dive deep into the automat
 socialImage: "https://cdn-images-1.medium.com/max/1000/1*RVEIaW2aJy900CLBKWRW5g.png"
 ---
 
-![Its this simple… right?](https://cdn-images-1.medium.com/max/1000/1*RVEIaW2aJy900CLBKWRW5g.png)
+![Its this simple… right?](https://cdn-images-1.medium.com/max/1000/1*RVEIaW2aJy900CLBKWRW5g.png "Its this simple… right?")
 
 ### Background
 
@@ -31,7 +31,7 @@ Some design features of our monorepo:
 -   **Simple workflows** — Multi-step incantations must be kept to a minimum. At any given time, a developer can check out `trunk` and run `helm install`, deploying images built from the exact code they have checked out. Additional overrides can be used to deploy subsets of the system when desired. We work hard to keep deploying as simple as possible.
 
 
-![Trunk-Based development | source: [https://trunkbaseddevelopment.com/](https://trunkbaseddevelopment.com/)](https://cdn-images-1.medium.com/max/1000/0*CrM8_hRPlr_Ew_ka)
+![Trunk-Based development | source: https://trunkbaseddevelopment.com/](https://cdn-images-1.medium.com/max/1000/0*CrM8_hRPlr_Ew_ka "Trunk-Based development | source: https://trunkbaseddevelopment.com/")
 
 ___
 
@@ -67,7 +67,7 @@ All Docker builds extend a common `.docker-build`. In our case, this template ca
 
 Initially, we created our CI definitions by hand. We found this was error prone and a maintenance nightmare (duh).
 
-![No one likes maintaining YAML](https://cdn-images-1.medium.com/max/1000/1*65QX_UnhRcvg-Nzsa6q2LQ.jpeg)
+![No one likes maintaining YAML](https://cdn-images-1.medium.com/max/1000/1*65QX_UnhRcvg-Nzsa6q2LQ.jpeg "No one likes maintaining YAML")
 
 To automate this, we wrote a script that will:
 
