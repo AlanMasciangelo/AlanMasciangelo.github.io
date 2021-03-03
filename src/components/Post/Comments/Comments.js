@@ -10,7 +10,7 @@ const Comments = ({ postSlug, postTitle }) => {
     script.setAttribute("src", "https://utteranc.es/client.js");
     script.setAttribute("crossorigin","anonymous");
     script.setAttribute("async", true);
-    script.setAttribute("repo", "AlanMasciangelo/website");
+    script.setAttribute("repo", "AlanMasciangelo/AlanMasciangelo.github.io");
     script.setAttribute("issue-term", "pathname");
     script.setAttribute( "theme", "github-light");
     script.setAttribute( "label", "comment");

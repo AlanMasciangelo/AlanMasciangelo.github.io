@@ -11,7 +11,7 @@ tags:
   - "Gitlab"
   - "Helm"
   - "Kubernetes"
-description: "There comes a time when every team must dive deep into the automation ocean. For us it was somewhere around the ~30 engineer mark. Here’s how we “matured” our continuous integration approach while scaling to 100+ engineers working on ~40 microservices."
+description: "There comes a time when every team must dive deep into the automation ocean. For us it was somewhere around the 30 engineer mark. Here’s how we matured our continuous integration approach while scaling to 100+ engineers working on 40+ microservices using GitLab CI, Docker, Kubernetes, and Helm."
 socialImage: "https://cdn-images-1.medium.com/max/1000/1*RVEIaW2aJy900CLBKWRW5g.png"
 ---
 
@@ -19,9 +19,9 @@ socialImage: "https://cdn-images-1.medium.com/max/1000/1*RVEIaW2aJy900CLBKWRW5g.
 
 ### Background
 
-There comes a time when every team must dive deep into the automation ocean. For us it was somewhere around the ~30 engineer mark. Here’s how we “matured” our continuous integration approach while scaling to 100+ engineers working on ~40 microservices.
+There comes a time when every team must dive deep into the automation ocean. For us it was somewhere around the 30 engineer mark. Here’s how we matured our continuous integration approach while scaling to 100+ engineers working on 40+ microservices using GitLab CI, Docker, Kubernetes, and Helm. 
 
-We use a combination of GitLab CI, Docker, Kubernetes, and Helm. We practice [trunk based development](https://trunkbaseddevelopment.com/) in a monorepo hosted in GitLab. The choice to use a monorepo wasn’t made lightly. Ultimately, we decided the benefits were just too great to pass on, even for a small group. Statically typed interfaces, atomic commits, uniform large-scale refactors, lockstep dependency upgrades, and shared build tooling have all paid dividends. Similar to the microservice philosophy, a monorepo does come at a complexity and engineering cost.
+We practice [trunk based development](https://trunkbaseddevelopment.com/) in a monorepo hosted on GitLab. The choice to use a monorepo wasn’t made lightly. Ultimately, we decided the benefits were just too great to pass on, even for a small group. Statically typed interfaces, atomic commits, uniform large-scale refactors, lockstep dependency upgrades, and shared build tooling have all paid dividends. Similar to the microservice philosophy, a monorepo does come at a complexity and engineering cost.
 
 Some design features of our monorepo:
 
@@ -134,7 +134,7 @@ At this point we should have a high level of confidence the feature branch is re
 
 One of our goals for the monorepo was quite simple:
 
-> _For any given checkout of trunk, a developer should be able to run_ `_helm install charts/monorepo_` _and have a deployment that matches the code checked out._
+> For any given checkout of trunk, a developer should be able to run `helm install charts/monorepo` and have a deployment that matches the code checked out.
 
 We soon realized this criterion presents a real chicken and egg problem.
 

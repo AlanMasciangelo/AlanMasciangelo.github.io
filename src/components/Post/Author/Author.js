@@ -10,10 +10,17 @@ const Author = () => {
   return (
     <div className={styles['author']}>
       <p className={styles['author__bio']}>
-        {author.bio}
       </p>
     </div>
   );
+
+  // return (
+  //   <div className={styles['author']}>
+  //     <p className={styles['author__bio']}>
+  //       {author.bio}
+  //     </p>
+  //   </div>
+  // );
 };
 
 export default Author;
