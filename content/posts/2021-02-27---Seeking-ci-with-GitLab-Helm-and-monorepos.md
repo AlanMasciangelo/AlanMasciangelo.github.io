@@ -15,25 +15,25 @@ description: "There comes a time when every team must dive deep into the automat
 socialImage: "https://cdn-images-1.medium.com/max/1000/1*RVEIaW2aJy900CLBKWRW5g.png"
 ---
 
-  
-
 ![Its this simple… right?](https://cdn-images-1.medium.com/max/1000/1*RVEIaW2aJy900CLBKWRW5g.png)
 
+### Background
 
 There comes a time when every team must dive deep into the automation ocean. For us it was somewhere around the ~30 engineer mark. Here’s how we “matured” our continuous integration approach while scaling to 100+ engineers working on ~40 microservices.
 
 We use a combination of GitLab CI, Docker, Kubernetes, and Helm. We practice [trunk based development](https://trunkbaseddevelopment.com/) in a monorepo hosted in GitLab. The choice to use a monorepo wasn’t made lightly. Ultimately, we decided the benefits were just too great to pass on, even for a small group. Statically typed interfaces, atomic commits, uniform large-scale refactors, lockstep dependency upgrades, and shared build tooling have all paid dividends. Similar to the microservice philosophy, a monorepo does come at a complexity and engineering cost.
 
-![](https://cdn-images-1.medium.com/max/1000/0*CrM8_hRPlr_Ew_ka)
-
-Trunk-Based development | source: [https://trunkbaseddevelopment.com/](https://trunkbaseddevelopment.com/)
-
 Some design features of our monorepo:
 
--   **It contains everything — **Everything needed to deploy every service we maintain. This means source code and Helm charts.
+-   **It contains everything** — Everything needed to deploy every service we maintain. This means source code and Helm charts.
 -   **Single versions** — Dependency versions are constrained at the root level via Yarn and Gradle. All projects use the same versions of external dependencies. Internal dependencies always use local references.
 -   **Convention over configuration** — We have very specific conventions enabling everything to _just work_. Add a Dockerfile to your project and the CI job will “automagically” appear.
 -   **Simple workflows** — Multi-step incantations must be kept to a minimum. At any given time, a developer can check out `trunk` and run `helm install`, deploying images built from the exact code they have checked out. Additional overrides can be used to deploy subsets of the system when desired. We work hard to keep deploying as simple as possible.
+
+
+![Trunk-Based development | source: [https://trunkbaseddevelopment.com/](https://trunkbaseddevelopment.com/)](https://cdn-images-1.medium.com/max/1000/0*CrM8_hRPlr_Ew_ka)
+
+___
 
 ### Building a change
 
@@ -67,9 +67,7 @@ All Docker builds extend a common `.docker-build`. In our case, this template ca
 
 Initially, we created our CI definitions by hand. We found this was error prone and a maintenance nightmare (duh).
 
-![](https://cdn-images-1.medium.com/max/1000/1*65QX_UnhRcvg-Nzsa6q2LQ.jpeg)
-
-No one likes maintaining YAML
+![No one likes maintaining YAML](https://cdn-images-1.medium.com/max/1000/1*65QX_UnhRcvg-Nzsa6q2LQ.jpeg)
 
 To automate this, we wrote a script that will:
 
@@ -204,4 +202,4 @@ This is the way our team decided to implement continuous integration. It isn’t
 2.  Automatic detection of changes for building, testing, and deploying.
 3.  A mechanism for always deploying the latest software.
 
-Continuous integration implementations always feel like a Rube Goldberg machine that functions as a means to an end. Bad automation and tedious workflows make developers less efficient and destroy quality of life. We’ve made those mistakes. But we also learned from them. Hopefully these ideas help someone else struggling to achieve DevOps nirvana… or at least teaches them a couple things not to do. Thanks for reading!
+Continuous integration implementations always feel like a Rube Goldberg machine that functions as a means to an end. Bad automation and workflows make developers less efficient and destroys quality of life. We’ve made those mistakes. But we also learned from them. Hopefully these ideas help someone else struggling to achieve DevOps nirvana… or at least teaches them a couple things not to do. Thanks for reading!
