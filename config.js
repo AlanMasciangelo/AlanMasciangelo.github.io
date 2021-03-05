@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://alanmasciangelo.github.io/',
   pathPrefix: '/',
-  title: 'Alan\'s personal site',
+  title: 'Alan\'s site',
   subtitle: '',
   copyright: '© All rights reserved.',
   disqusShortname: '',
