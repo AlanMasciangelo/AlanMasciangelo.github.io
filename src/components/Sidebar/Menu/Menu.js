@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styles from './Menu.module.scss';
+import Resume from './Resume'
 
 type Props = {
   menu: {
@@ -24,6 +25,7 @@ const Menu = ({ menu }: Props) => (
           </Link>
         </li>
       ))}
+      <Resume/>
     </ul>
   </nav>
 );
