@@ -132,11 +132,9 @@ At this point we should have a high level of confidence the feature branch is re
 
 ### Integrating the change
 
-One of our goals for the monorepo was quite simple:
+> For any given checkout of trunk, a developer should be able to run helm install charts/monorepo and have a deployment that matches the code checked out.
 
-> For any given checkout of trunk, a developer should be able to run `helm install charts/monorepo` and have a deployment that matches the code checked out.
-
-We soon realized this criterion presents a real chicken and egg problem.
+Seemed simple enough...we soon realized this presents a real chicken and egg problem.
 
 When a feature branch is merged, we build a new version of each docker image that was updated. We tag the image with a unique id corresponding to the merge request. This gives nice traceability back to which merge request was responsible for triggering the build.
 

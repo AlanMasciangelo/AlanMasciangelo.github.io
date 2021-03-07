@@ -26,7 +26,7 @@ module.exports = {
   author: {
     name: 'Alan Masciangelo',
     photo: '/photo.jpg',
-    bio: 'I like games 👾, building things 👨‍💻, and whiskey 🥃. ',
+    bio: 'I like games 👾, building things 👨‍💻, and whiskey 🥃.',
     contacts: {
       email: 'a.masciangelo.dev@gmail.com',
       facebook: '',
