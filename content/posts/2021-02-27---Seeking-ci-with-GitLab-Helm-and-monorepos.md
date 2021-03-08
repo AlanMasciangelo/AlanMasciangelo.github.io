@@ -19,7 +19,7 @@ socialImage: "https://cdn-images-1.medium.com/max/1000/1*RVEIaW2aJy900CLBKWRW5g.
 
 ### Background
 
-True continuous integration and deployment are harder than they sees. At least I think so. Its easy to drift or take shortcuts or not really do what you say you are doing. Like everything else in software, it gets harder as you scale. Does every team need a "DevOps person"? Who coordinates new features between teams? O yeah we have microservices right? No need for coordination... 
+True continuous integration and deployment are harder than they seem. At least I think so. Its easy to drift or take shortcuts or not really do what you say you are doing. Like everything else in software, it gets harder as you scale. Does every team need a "DevOps person"? Who coordinates new features between teams? O yeah we have microservices right? No need for coordination... 
 
 Somewhere around the 30 engineer mark we knew we needed to make a change. Not all teams had the necessary skill sets, some were better at API management than others. Some applications were more stable. Some were taking short cuts. Here’s how we matured our continuous integration approach while scaling to 100+ engineers working on 40+ microservices using GitLab CI, Docker, Kubernetes, and Helm. 
 
