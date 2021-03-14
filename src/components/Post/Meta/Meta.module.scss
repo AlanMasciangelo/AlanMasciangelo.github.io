@@ -5,5 +5,13 @@
   &__date {
     font-style: italic;
   }
+}
 
+.author {  
+  &__photo {
+    display: inline-block;
+    margin-bottom: 0;
+    border-radius: 50%;
+    background-clip: padding-box
+  }
 }
