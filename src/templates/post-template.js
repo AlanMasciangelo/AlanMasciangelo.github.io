@@ -43,6 +43,8 @@ export const query = graphql`
         socialImage {
           publicURL
         }
+        reddit
+        linkedin
       }
     }
   }

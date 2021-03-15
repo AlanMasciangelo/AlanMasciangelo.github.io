@@ -26,7 +26,9 @@ export type Node = {
   fields: {
     slug: string,
     categorySlug?: string,
-    tagSlugs?: string[]
+    tagSlugs?: string[],
+    reddit?: string,
+    linkedin?: string
   },
   frontmatter: {
     date: string,
@@ -36,7 +38,9 @@ export type Node = {
     title: string,
     socialImage?: {
       publicURL: string
-    }
+    },
+    reddit?: string,
+    linkedin?: string
   },
   html: string,
   id: string

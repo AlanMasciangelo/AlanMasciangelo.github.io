@@ -16,8 +16,8 @@ type Props = {
 const Post = ({ post }: Props) => {
   const { html } = post;
   const { tagSlugs, slug } = post.fields;
-  const { tags, title, date } = post.frontmatter;
-
+  const { tags, title, date, reddit, linkedin } = post.frontmatter;
+  const links = { reddit, linkedin };
   return (
     <div className={styles['post']}>
       <Link className={styles['post__home-button']} to="/">All Articles</Link>
@@ -27,7 +27,7 @@ const Post = ({ post }: Props) => {
       </div>
 
       <div className={styles['post__footer']}>
-        <Meta date={date} />
+        <Meta date={date} links={links} />
         {/* {tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />} */}
         <Author />
       </div>

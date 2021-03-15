@@ -8,23 +8,17 @@ type Props = {
   date: string
 };
 
-const Meta = ({ date }: Props) => {
+const Meta = ({ date, links }: Props) => {
   const { author } = useSiteMetadata();
   return ( 
     <div className={styles['meta']}>
       <p className={styles['meta__date']}>Published {new Date(date).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })} by {author.name} 
-        {/* <div className={styles['author']}>
-          <Link to="/">
-            <img
-              src={withPrefix(author.photo)}
-              className={styles['author__photo']}
-              width="44"
-              height="44"
-              alt={author.name}
-            />
-          </Link>
-        </div> */}
       </p>
+          {Object.entries(links).filter(link => link[1]).map((link) => (
+             <a href={link[1]} class={styles['svg']}>
+             <object data={`../media/${link[0]}.svg`} width="20" height="20" type="image/svg+xml"/>
+             </a> 
+          ))}
     </div>
   );
 };
