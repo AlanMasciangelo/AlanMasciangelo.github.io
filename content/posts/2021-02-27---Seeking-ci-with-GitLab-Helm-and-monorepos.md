@@ -14,7 +14,7 @@ tags:
   - "Helm"
   - "Kubernetes"
 description: "There comes a time when every team must dive deep into the automation ocean. For us it was somewhere around the 30 engineer mark. Here’s how we matured our continuous integration approach while scaling to 100+ engineers working on 40+ microservices using GitLab CI, Docker, Kubernetes, and Helm."
-socialImage: "https://cdn-images-1.medium.com/max/1000/1*RVEIaW2aJy900CLBKWRW5g.png"
+socialImage: "/media/gitlab.png"
 ---
 
 ![Its this simple… right?](https://cdn-images-1.medium.com/max/1000/1*RVEIaW2aJy900CLBKWRW5g.png "Its this simple… right?")
