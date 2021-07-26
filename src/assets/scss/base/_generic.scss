@@ -167,3 +167,20 @@ figcaption {
   }
 
 }
+
+table { 
+  display: block; 
+  width: 100%; 
+  border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+  border: 1px;
+  border-color: black;
+  background-color: #f2f2f2;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 6px;
+}
