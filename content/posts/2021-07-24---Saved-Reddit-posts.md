@@ -14,6 +14,7 @@ tags:
   - "Programming"
   - "Java"
 description: "I like to share interesting programming articles with my co-workers. Most of these come from Reddit. Someone asked if I had a comprehensive list... so here ya go. "
+socialImage: "https://pbs.twimg.com/profile_images/548879553670574082/k9Zp8HkW_400x400.png"
 ---
 
 I like to share interesting programming articles with my co-workers. Most of these come from Reddit. Someone asked if I had a comprehensive list... so here ya go. 
