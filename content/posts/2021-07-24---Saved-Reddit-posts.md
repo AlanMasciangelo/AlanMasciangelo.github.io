@@ -4,7 +4,7 @@ author: Alan Masciangelo
 date: "2021-07-24"
 template: "post"
 draft: false
-slug: "Saved-Reddit-posts"
+slug: "saved-reddit-posts"
 category: "Programming"
 tags:
   - "DevOps"
@@ -16,6 +16,9 @@ tags:
 description: "I like to share interesting programming articles with my co-workers. Most of these come from Reddit. Someone asked if I had a comprehensive list... so here ya go. "
 socialImage: "/media/reddit.png"
 ---
+
+![](/media/reddit.png)
+
 
 I like to share interesting programming articles with my co-workers. Most of these come from Reddit. Someone asked if I had a comprehensive list... so here ya go. 
 

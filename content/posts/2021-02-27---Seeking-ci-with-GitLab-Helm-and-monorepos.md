@@ -4,7 +4,7 @@ author: Alan Masciangelo
 date: "2021-02-27"
 template: "post"
 draft: false
-slug: "Seeking-ci-with-GitLab-Helm-and-monorepos"
+slug: "seeking-ci-with-gitlab-helm-and-monorepos"
 category: "DevOps"
 reddit: "https://www.reddit.com/r/devops/comments/m0f39w/monorepo_cicd_with_gitlab_and_helm"
 linkedin: "https://www.linkedin.com/posts/alanmasciangelo_seeking-continuous-integration-with-gitlab-activity-6774674251120160768-YihX"

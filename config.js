@@ -3,10 +3,10 @@
 module.exports = {
   url: 'https://alanmasciangelo.github.io/',
   pathPrefix: '/',
-  title: 'Alan\'s site',
+  title: 'Alan\'s random musings.',
   subtitle: '',
   copyright: '© All rights reserved.',
-  disqusShortname: '',
+  disqusShortname: 'alandev',
   postsPerPage: 4,
   useKatex: false,
   menu: [
@@ -26,7 +26,7 @@ module.exports = {
   author: {
     name: 'Alan Masciangelo',
     photo: '/photo.jpg',
-    bio: 'I like games 👾, building things 👨‍💻, and whiskey 🥃.',
+    bio: 'I honestly have no idea what I\'m doing but I\'m pretty sure most people don\'t.',
     contacts: {
       email: 'a.masciangelo.dev@gmail.com',
       facebook: '',
