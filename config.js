@@ -3,7 +3,7 @@
 module.exports = {
   url: 'https://alanmasciangelo.github.io/',
   pathPrefix: '/',
-  title: 'Alan\'s random musings.',
+  title: 'Alan\'s thoughts on software.',
   subtitle: '',
   copyright: '© All rights reserved.',
   disqusShortname: 'alandev',
@@ -26,7 +26,7 @@ module.exports = {
   author: {
     name: 'Alan Masciangelo',
     photo: '/photo.jpg',
-    bio: 'I honestly have no idea what I\'m doing but I\'m pretty sure most people don\'t.',
+    bio: 'Some thoughts on software and tech.',
     contacts: {
       email: 'a.masciangelo.dev@gmail.com',
       facebook: '',
